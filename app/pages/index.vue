@@ -15,6 +15,8 @@
 
         <Skills />
 
+        <Contact />
+
         <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center">
             <p class="text-slate-400 text-sm">
                 &copy; {{ new Date().getFullYear() }} My Portfolio. All rights reserved.

@@ -12,9 +12,27 @@ interface Project {
 }
 
 const projects = ref<Project[]>([
-    { id: 1, title: 'ระบบ Point of Sale (POS)', description: 'ระบบจัดการหน้าร้านและการขาย รองรับการจัดการสต็อกสินค้าอย่างมีประสิทธิภาพ พร้อมฐานข้อมูลที่รวดเร็วและปลอดภัย', imageUrl: 'https://placehold.co/600x400/1e293b/ffffff?text=POS+System', techStack: [ 'Nuxt 3', 'Prisma', 'MySQL', 'Tailwind' ], demoLink: '#', codeLink: '#' },
-    { id: 2, title: 'E-commerce Salepage & Order Management', description: 'หน้าเว็บเซลเพจสำหรับร้านค้าออนไลน์ พร้อมระบบหลังบ้านสำหรับจัดการออเดอร์และการชำระเงินที่ใช้งานง่าย', imageUrl: 'https://placehold.co/600x400/1e293b/ffffff?text=E-commerce+Salepage', techStack: [ 'Laravel', 'Vue.js', 'Tailwind CSS' ], demoLink: '#', codeLink: '#' },
-    { id: 3, title: 'LINE LIFF Business Application', description: 'แอปพลิเคชันบน LINE ที่ช่วยให้ธุรกิจสามารถทำการตลาด บริการลูกค้า และส่ง Flex Message โปรโมชันได้อย่างสะดวก', imageUrl: 'https://placehold.co/600x400/1e293b/ffffff?text=LINE+LIFF+App', techStack: [ 'LINE API', 'JavaScript', 'Express.js' ], demoLink: '#', codeLink: '#' }
+    { id: 1, 
+    title: 'ระบบ Point of Sale (POS)', 
+    description: 'ระบบจัดการหน้าร้านและการขาย รองรับการจัดการสต็อกสินค้าอย่างมีประสิทธิภาพ พร้อมฐานข้อมูลที่รวดเร็วและปลอดภัย', 
+    imageUrl: 'images/POS.png', 
+    techStack: [ 'Nuxt 4', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'TypeScript', 'Supabase' ], 
+    demoLink: 'https://pos-001-vendora.vercel.app/', 
+    codeLink: '#' },
+    { id: 2, 
+    title: 'E-commerce Salepage & Order Management', 
+    description: 'หน้าเว็บเซลเพจสำหรับร้านค้าออนไลน์ พร้อมระบบหลังบ้านสำหรับจัดการออเดอร์และการชำระเงินที่ใช้งานง่าย', 
+    imageUrl: '/images/tidjai.png', 
+    techStack: [ 'Laravel 12', 'PHP', 'Tailwind CSS', 'MySQL', 'LINE API' ], 
+    demoLink: 'https://tidjaithaisnack.com/', 
+    codeLink: '#' },
+    { id: 3, 
+    title: 'บริหารจัดการโครงงานนักศึกษาสายวิชาคอมพิวเตอร์', 
+    description: 'เว็บไซต์บริหารจัดการโครงงานนักศึกษาสายวิชาคอมพิวเตอร์', 
+    imageUrl: 'images/proend.png', 
+    techStack: [ 'Nuxt 4', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'TypeScript', 'Supabase' ], 
+    demoLink: 'https://pro-end-001.vercel.app/', 
+    codeLink: '#' }
 ])
 
 onMounted(() => {
